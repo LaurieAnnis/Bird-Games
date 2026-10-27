@@ -64,6 +64,9 @@
         frameworkUrl: buildUrl + "/Bird-Games.framework.js",
         codeUrl: buildUrl + "/Bird-Games.wasm",
         streamingAssetsUrl: "StreamingAssets",
+        // Write saved files (Bird Paint pictures, etc.) to the browser's
+        // IndexedDB as soon as they change, so they survive closing the app.
+        autoSyncPersistentDataPath: true,
         companyName: "MostlyHarmlessAdventurers",
         productName: "Bird Games",
         productVersion: "0.2.01",
